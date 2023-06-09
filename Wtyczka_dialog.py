@@ -42,11 +42,5 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
-        self.pushButton_policz.clicked.connect(self.count_selected_elements)
-
-    def count_selected_elements(self):
-        number_of_elements = 22
-        self.label_liczba_elementow_display.setText(str(number_of_elements))
-        # self.pushButton_policz.clicked.connect(self.policz_zaznaczone_elementy)
-
+       
 
