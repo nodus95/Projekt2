@@ -1,6 +1,6 @@
 Wymagana jest 
 
-##Instrukcja instalacji wtyczki
+Instrukcja instalacji wtyczki
 
 Wszystkie pliki znajdujące się w folderze "Wymagane pliki" należy umieścić w folderze plugins, znajdującym się w lokalizacji:
 Qgis Białowieża
