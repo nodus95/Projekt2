@@ -90,7 +90,10 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
                 QgsMessageLog.logMessage("Nieobsługiwany system wysokości.", level=Qgis.Warning)
 
             result_message = f"Różnica wysokości między punktami {punkt_1} i {punkt_2} w systemie wysokościowym {system_wysokosci} wynosi: {roznica_wysokosci} [m]"
-            QgsMessageLog.logMessage(result_message, level=Qgis.Info)
+            QgsMessageLog.logMessage(result_message, level=Qgis.Success)
+
+                    # Wyświetlenie wiadomości na pasku informacyjnym
+            iface.messageBar().pushMessage("Obliczenie różnicy wysokości", result_message, level=Qgis.Success)
 
         if len(selected_features) > 2:
             self.policz_pole(selected_features)
