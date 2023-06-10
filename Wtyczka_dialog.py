@@ -116,7 +116,7 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
             pole += (punkty[j].x() + punkty[i].x()) * (punkty[j].y() - punkty[i].y())
 
         pole /= 2.0
-        pole = abs(pole)
+        pole = round(abs(pole), 4)
 
         #Pobieranie numerów punktów
         point_numbers = [feature.attribute('nr_punktu') for feature in selected_features]
