@@ -1,32 +1,21 @@
-Plugin Builder Results
+##Instrukcja instalacji wtyczki
 
-Your plugin Projekt2 was created in:
-    C:/Users/krzys/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins\wtyczka
+Wszystkie pliki znajdujące się w folderze "Wymagane pliki" należy umieścić w folderze plugins, znajdującym się w lokalizacji:
+Qgis Białowieża
+```sh
+  C:/Users/<nazwa użytkownika>/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/<nazwa wtyczki>
+```
+lub dla Qgis Firenze
+```sh
+C:/Users/<nazwa użytkownika>/AppData/Roaming/Qgis/apps/qgis-ltr/python/plugins/<nazwa wtyczki>
+```
+Następnie należy w menu "wtyczki" wybrać opcję "zarządzanie wtyczkami" i znaleźć pozycję <nazwa wtyczki> i upewnić się że zaznaczony jest checkbox obok nazwy naszej wtyczki
 
-Your QGIS plugin directory is located at:
-    C:/Users/krzys/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins
-
-What's Next:
-
-  * Copy the entire directory containing your new plugin to the QGIS plugin
-    directory
-
-  * Compile the resources file using pyrcc5
-
-  * Run the tests (``make test``)
-
-  * Test the plugin by enabling it in the QGIS plugin manager
-
-  * Customize it by editing the implementation file: ``Wtyczka.py``
-
-  * Create your own custom icon, replacing the default icon.png
-
-  * Modify your user interface by opening Projekt2_dialog_base.ui in Qt Designer
-
-  * You can use the Makefile to compile your Ui and resource files when
-    you make changes. This requires GNU make (gmake)
-
-For more information, see the PyQGIS Developer Cookbook at:
-http://www.qgis.org/pyqgis-cookbook/index.html
-
-(C) 2011-2018 GeoApt LLC - geoapt.com
+Wtyczka wykonuje następujące czynności:
+Po zaznaczeniu dwóch punktów na tej samej warstwie oblicza różnicę wysokości między nimi.
+W wiadomości wynikowej wyświetlane są numery punktów wykorzystanych do obliczeń. Program przyjmuje wartości do obliczeń zawsze w tej samej kolejności, takiej samej w jakiej wymienione są numery punktów. aby uzyskać odwrotne przewyższenie należy przyjąć obliczoną wartość z odwrotnym znakiem.
+Obsługiwane są wysokości podane w systemach:
+- PL-EVRF2007
+- PL-KRON86
+których atrybuty są opisane w tabeli atrybutów jako kolejno: "h_plevrf2007nh" i "h_plkron86nh".
+W przypadku gdy nazwa atrybutu wysokości jest inna 
