@@ -1,8 +1,8 @@
 Plugin Builder Results
-
+~~sh
 Your plugin Projekt2 was created in:
     C:/Users/krzys/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins\wtyczka
-
+~~
 Your QGIS plugin directory is located at:
     C:/Users/krzys/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins
 
