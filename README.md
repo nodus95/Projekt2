@@ -1,3 +1,8 @@
+# Projekt 1 - wtyczka do programu QGIS
+Za pomocą której użytkownik będzie w stanie obliczyć różnicę wysokości oraz pole powierzchni pomiędzy wybranymi punktami na warstwie.
+
+### Wymagania
+
 Wymagana jest 
 
 Instrukcja instalacji wtyczki
@@ -11,7 +16,9 @@ lub dla Qgis Firenze
 ```sh
 C:/Users/<nazwa użytkownika>/AppData/Roaming/Qgis/apps/qgis-ltr/python/plugins/<nazwa wtyczki>
 ```
-Następnie należy w menu "wtyczki" wybrać opcję "zarządzanie wtyczkami" i znaleźć pozycję <nazwa wtyczki> i upewnić się że zaznaczony jest checkbox obok nazwy naszej wtyczki
+Następnie w programie QGIS należy w menu "wtyczki" wybrać opcję "zarządzanie wtyczkami" i znaleźć pozycję <nazwa wtyczki> i upewnić się że zaznaczony jest checkbox obok nazwy naszej wtyczki
+
+### Jak działa nasza wtyczka
 
 Wtyczka wykonuje następujące czynności:
 
