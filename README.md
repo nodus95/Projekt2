@@ -2,10 +2,9 @@
 Za pomocą której użytkownik będzie w stanie obliczyć różnicę wysokości oraz pole powierzchni pomiędzy wybranymi punktami na warstwie.
 
 ### Wymagania
+Aby użytkownik mógł przetestować naszą wtyczke musi posiadać na swoim urządzeniu program QGIS.
 
-Wymagana jest 
-
-Instrukcja instalacji wtyczki
+Wymagana jest również instalacja wtyczki:
 
 Wszystkie pliki znajdujące się w folderze "Wymagane pliki" należy umieścić w folderze plugins, znajdującym się w lokalizacji:
 Qgis Białowieża
