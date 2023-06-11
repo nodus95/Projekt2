@@ -41,3 +41,5 @@ Po zaznaczeniu min. trzech  punktów na tej samej warstwie i naciśnięciu przyc
 Pole powierzchni obliczane jest TYLKO dla punktów w układzie PL-2000, których współrzędne 'x' i 'y' są opisane w tabeli atrybutów jako kolejno: 'x2000' 'y2000'.
 
 ### Uwagi oraz błędy 
+
+- Atrybuty współrzędnych oraz wysokości punktów muszą być nazwane tak samo jak jest to napisane powyżej. W innym wypadku wtyczka nie zadziała.
