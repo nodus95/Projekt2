@@ -7,11 +7,11 @@ Aby użytkownik mógł przetestować naszą wtyczke musi posiadać na swoim urz�
 Wymagana jest również instalacja wtyczki:
 
 Wszystkie pliki znajdujące się w folderze "Wymagane pliki" należy umieścić w folderze plugins, znajdującym się w lokalizacji:
-Qgis Białowieża
+QGIS Białowieża
 ```sh
   C:/Users/<nazwa użytkownika>/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/<nazwa wtyczki>
 ```
-lub dla Qgis Firenze
+lub dla QGIS Firenze
 ```sh
 C:/Users/<nazwa użytkownika>/AppData/Roaming/Qgis/apps/qgis-ltr/python/plugins/<nazwa wtyczki>
 ```
