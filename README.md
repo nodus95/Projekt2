@@ -1,4 +1,4 @@
-# Projekt 1 - wtyczka do programu QGIS
+# Projekt 2 - wtyczka do programu QGIS
 Za pomocą której użytkownik będzie w stanie obliczyć różnicę wysokości oraz pole powierzchni pomiędzy wybranymi punktami na warstwie.
 
 ### Wymagania
