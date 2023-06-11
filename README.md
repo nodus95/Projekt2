@@ -7,15 +7,13 @@ Aby użytkownik mógł przetestować naszą wtyczke musi posiadać na swoim urz�
 Wymagana jest również instalacja wtyczki:
 
 Wszystkie pliki znajdujące się w folderze "Wymagane pliki" należy umieścić w folderze plugins, znajdującym się w lokalizacji:
-QGIS Białowieża
+Przykładowo dla wersji QGIS 3.22.16:
+
 ```sh
-  C:/Users/<nazwa użytkownika>/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/<nazwa wtyczki>
+  C:/Users/<nazwa_użytkownika>/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/<nazwa_wtyczki>
 ```
-lub dla QGIS Firenze
-```sh
-C:/Users/<nazwa użytkownika>/AppData/Roaming/Qgis/apps/qgis-ltr/python/plugins/<nazwa wtyczki>
-```
-Następnie w programie QGIS należy w menu "wtyczki" wybrać opcję "zarządzanie wtyczkami" i znaleźć pozycję <nazwa wtyczki> i upewnić się że zaznaczony jest checkbox obok nazwy naszej wtyczki
+
+Następnie w programie QGIS należy w menu "Wtyczki" wybrać opcję "Zarządzanie wtyczkami", znaleźć pozycję "Naszawtyczka" i upewnić się że zaznaczony jest checkbox obok nazwy naszej wtyczki. Następnie należy kliknąć "Zainstaluj wtyczkę.
 
 ### Jak działa nasza wtyczka
 
@@ -41,4 +39,5 @@ Pole powierzchni obliczane jest TYLKO dla punktów w układzie PL-2000, których
 
 ### Uwagi oraz błędy 
 
+- Ścieżka do folderu plugins nie musi być podobna jak w przykładzie, jest to zależne od wersji QGISA oraz systemu użytkownika.
 - Atrybuty współrzędnych oraz wysokości punktów muszą być nazwane tak samo jak jest to napisane powyżej. W innym wypadku wtyczka nie zadziała.
