@@ -18,7 +18,7 @@ Wtyczka wykonuje następujące czynności:
 OBLICZANIE RÓŻNICY WYSOKOŚCI
 
 Po zaznaczeniu dwóch punktów na tej samej warstwie i naciśnięciu przycisku 'policz' w interface wtyczki oblicza różnicę wysokości między nimi.
-W wiadomości wynikowej (wyświetlanej w komunikatach) wyświetlane są numery punktów wykorzystanych do obliczeń na podstawie wartości atrybutu 'nr_punktu'. Program przyjmuje wartości do obliczeń zawsze w tej samej kolejności, takiej samej w jakiej wymienione są numery punktów. aby uzyskać odwrotne przewyższenie należy przyjąć obliczoną wartość z odwrotnym znakiem.
+W wiadomości wynikowej (wyświetlanej w komunikatach) wyświetlane są numery punktów wykorzystanych do obliczeń na podstawie wartości atrybutu 'nr_punktu'. Program przyjmuje wartości do obliczeń zawsze w tej samej kolejności, takiej samej w jakiej wymienione są numery punktów. aby uzyskać odwrotne przewyższenie należy przyjąć obliczoną wartość z odwrotnym znakiem. 
 Obsługiwane są wysokości podane w systemach:
 - PL-EVRF2007
 - PL-KRON86
