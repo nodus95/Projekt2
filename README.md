@@ -24,7 +24,7 @@ Wtyczka wykonuje następujące czynności:
 ##### OBLICZANIE RÓŻNICY WYSOKOŚCI
 
 
-Wtyczka pobiera wartość numeru punktu z tabeli atrybutów (kolumna 'nr_punktu').
+Wtyczka pobiera wartość numeru punktu z tabeli atrybutów (kolumna 'nr_punktu'), bez tego atrybutu nie zostaną wykonane żadne obliczenia.
 Obsługiwane są wysokości podane w systemach:
 
 - PL-EVRF2007
