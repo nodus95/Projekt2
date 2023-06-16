@@ -62,6 +62,7 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
         active_layer = QgsProject.instance().mapLayersByName(active_layer_name)
 
         if len(active_layer) == 0:
+            iface.messageBar().pushMessage("Nie można uzyskać aktywnej warstwy.", level = Qgis.Warning)
             QgsMessageLog.logMessage("Nie można uzyskać aktywnej warstwy.", level=Qgis.Warning)
             return
 
@@ -70,6 +71,7 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
         selected_features = active_layer.selectedFeatures()
 
         if len(selected_features) < 2:
+            iface.messageBar().pushMessage("Wybierz co najmniej 2 obiekty na warstwie.", level = Qgis.Warning)
             QgsMessageLog.logMessage("Wybierz co najmniej 2 obiekty na warstwie.", level=Qgis.Warning)
             return
 
@@ -87,6 +89,7 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
                 roznica_wysokosci = round(float(feature_1.attribute('h_plkron86nh')) - float(feature_2.attribute('h_plkron86nh')),4)
                 system_wysokosci = 'PL_KRON86'
             else:
+                iface.messageBar().pushMessage("Nieobsługiwany system wysokości.", level = Qgis.Warning)
                 QgsMessageLog.logMessage("Nieobsługiwany system wysokości.", level=Qgis.Warning)
 
             result_message = f"Różnica wysokości między punktami {punkt_1} i {punkt_2} w systemie wysokościowym {system_wysokosci} wynosi: {roznica_wysokosci} [m]"
@@ -129,3 +132,4 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
 
         # Wyświetlenie wiadomości na pasku informacyjnym
         iface.messageBar().pushMessage("Obliczenie pola powierzchni", result_message, level=Qgis.Success)
+        QgsMessageLog.logMessage(result_message, level=Qgis.Success)
