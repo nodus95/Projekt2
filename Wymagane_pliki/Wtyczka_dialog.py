@@ -105,7 +105,6 @@ class Projekt2Dialog(QtWidgets.QDialog, FORM_CLASS):
 
         #Pobieranie współrzędnych zaznaczonych punktów
         punkty = []
-        selected_features = self.layer.currentLayer().selectedFeatures()
         for feature in selected_features:
             x = float(feature.geometry().asPoint().x())
             y = float(feature.geometry().asPoint().y())
